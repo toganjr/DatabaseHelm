@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TV_textTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Pilih Tanggal : "
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTextTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/TV_textTanggal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/white"
+
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:id="@+id/TV_pembatas"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextTanggal"
+        android:background="@color/darkwhite"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/TV_pembatas"
+        android:layoutAnimation="@anim/layout_animation"
+
+
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.9"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="1"
+        >
+
+        <TextView
+            android:id="@+id/TV_texttotalHari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Total Pendapatan hari ini : "
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/TV_hasilhari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/TV_texttotalHari"
+            android:textSize="26dp"
+            android:textColor="@color/realblack"
+            />
+
+        <TextView
+            android:id="@+id/TV_texttotalBulan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/TV_hasilhari"
+            android:text="Total Pendapatan bulan ini : "
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/TV_hasilbulan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/TV_texttotalBulan"
+            android:textSize="26dp"
+            android:textColor="@color/realblack"
+            />
+
+        <TextView
+            android:id="@+id/pembatas2"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/TV_hasilbulan"
+            android:background="@color/darkwhite"
+            />
+
+        <TextView
+            android:id="@+id/TV_textuntungHari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/pembatas2"
+            android:text="Total Keuntungan hari ini : "
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/TV_untunghari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/TV_textuntungHari"
+            android:textSize="26dp"
+            android:textColor="@color/realblack"
+            />
+
+        <TextView
+            android:id="@+id/TV_textuntungBulan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/TV_untunghari"
+            android:text="Total Keuntungan bulan ini : "
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/TV_untungbulan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/TV_textuntungBulan"
+            android:textSize="26dp"
+            android:textColor="@color/realblack"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
